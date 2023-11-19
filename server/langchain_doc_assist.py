@@ -10,7 +10,6 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains import RetrievalQA
 
 
-
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -18,9 +17,9 @@ llm = "gpt-3.5-turbo"
 persist_directory = '/chroma_db/'
 
 embeddings = OpenAIEmbeddings()
-collection_name = "doc_embeddings"
-vectordb = Chroma(persist_directory=persist_directory,
-                  embedding_function=embeddings, collection_name=collection_name)
+# collection_name = "doc_embeddings"
+# vectordb = Chroma(persist_directory=persist_directory,
+#                   embedding_function=embeddings, collection_name=collection_name)
 
 # print(vectordb._collection.count())
 
@@ -44,11 +43,15 @@ def r_text_splitter(loadedPDF):
 def doc_assist(file, query):
     texts = r_text_splitter(load_pdf(file))
     # Vectorstores
-    db = Chroma.from_documents(texts, embeddings)
-    retriever = db.as_retriever(
+    collection_name = '${file}_embeddings'
+    vectordb = Chroma(persist_directory=persist_directory,
+                      embedding_function=embeddings, collection_name=collection_name)
+    vectordb = Chroma.from_documents(texts, embeddings)
+    # print(vectordb._collection.count())
+    retriever = vectordb.as_retriever(
         search_type="similarity", search_kwargs={"k": 2})
     # result = db.similarity_search(query, k=2)
     qa = RetrievalQA.from_chain_type(
         llm=OpenAI(temperture=0), chain_type="map reduce", retriever=retriever, return_source_documents=True)
-    
+
     return qa({"query": query})
