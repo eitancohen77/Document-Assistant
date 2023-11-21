@@ -1,0 +1,83 @@
+CISC 1115 TR0 – Spring 2021
+Science Section
+Professor Yedidyah Langsam
+Department of Computer and Information Science
+Room 2109N
+718-951-5657
+Email: langsam@sci.brooklyn.cuny.edu
+Home page: http://eilat.sci.brooklyn.cuny.edu
+Skype: bccisprof
+Course Requirements
+IMPORTANT NOTE: For pedagogical reasons, I will require all students to have
+their cameras on during both lectures and examinations. Face-to-face teaching is the
+only way to have an effective learning process. Students who do not wish to use their
+cameras should choose another section. If on any given day, there is a reason why
+you cannot turn your camera on, you will need to write me in advance.
+Required Textbooks:
+ Allen Downey and Chris Mayfield, Think Java: How to Think Like a Computer
+Scientist, Version 6.1.3, Green Tea Press, 2016, Creative Commons License.
+http://greenteapress.com/thinkjava6/thinkjava.pdf
+This is our main text for learning Java.
+ Yedidyah Langsam, Workbook for Java, First Edition
+This book contains a large number of solved problems, plus two sample final
+exams. You should use it on your own, to go over material covered in class. A
+copy should be purchased at Far Better Printing, 43 Hillel Pl, Brooklyn, NY
+11210 b/t Campus Rd & Kenilworth Pl. Make sure you get the latest version as
+earlier editions had many errors.
+Far Better Printing is now open from 10AM to 3PM. You may also order by
+email:
+sales@farbetterprinting.com
+Cost would be $45 each with shipping and you can email your requests to this
+email with their contact phone number, Name and ship to address.
+ Class Handouts
+ Supplementary Text (not required): Introduction to Java Programming, Brief
+Edition, Y. Daniel Lang, 11th edition, Person, 2017
+Also download the NetBeans tutorial from:
+http://www.sci.brooklyn.cuny.edu/~goetz/java/netbeans.pdf
+The following page has lots of useful information for the class including instructions
+for downloading the NetBeans IDE which we will be using in class.
+http://www.sci.brooklyn.cuny.edu/cisc1115/
+Install the NetBeans IDE from:
+https://netbeans.apache.org/download/nb120/nb120.html
+Be sure to install the correct version for your computer.
+Class Meetings:
+Classes will meet Tuesdays and Thursday, from 10:10 – 12:15 PM using Zoom.
+Although attendance is not mandatory, you are responsible for whatever is done in class,
+whether or not you are there. In particular, you are responsible for all homework assigned
+in class. Make sure you get the notes and assignments from someone if you miss a
+class.
+Exams:
+There will be two exams. The first exam will be after about 12 or 13 classes. The
+second exam will be sometime in the last week or so of the term. Together, the exams
+will count for one third of your grade.
+Final Exam:
+There will be a cumulative final exam, which will count for one third of your grade.
+Programs:
+There will be a total of 8 or 9 programs assigned throughout the semester. Each
+program will be run on either a PC or a Mac.
+The programs will be assigned roughly every third or fourth meeting of the class.
+Typically, each program will be due two or three class meetings after it is assigned. For
+example, if a program is assigned on Tuesday, then it will be due on Thursday of the next
+week, or the class after that. There will be a penalty for lateness, 5% per class late. I will
+no longer accept assignments after 25 points of penalty have been accumulated. Each
+program will be graded and returned to you, usually by the next class.
+ You will have to get a thumb drive which will be used to store backups of your
+programs. All submissions will be done via email. We do NOT use Blackboard in this
+class. Please make sure to backup all your work. Do not place all your eggs in one basket!
+Together, the programs will count for one third of your grade.
+Office Hours:
+Office hours will be held via Skype upon request. You may open a free Skype account.
+Search for bccisprof and send me an invite. I will respond and then we will be able to chat.
+If you have any questions about anything covered in class, please feel free to contact me.
+If you need to communicate with me, the ONLY guaranteed way to reach me is by email.
+You may also contact me via Facebook, Messenger, or Skype.
+Course Workload:
+There is a tremendous amount of work involved in learning how to program. You
+should be prepared to spend, on the average, 12 hours per week running your programs.
+This is in addition to time spent in class and time spent studying for the exams. If you
+don't have the time, don't kid yourself; drop the course.
+Academic Calendar:
+Please check the academic calendar for important dates regarding deadlines for
+dropping classes, etc. here:
+http://www.brooklyn.cuny.edu/web/about/administration/enrollment/registrar/bulletins/s
+pring21/calendar.php
