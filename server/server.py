@@ -42,9 +42,10 @@ def getChromaDBData():
 
         results = collection.query(
             query_texts = [user_input],
-            n_results=2,
+            n_results=1,
             include=['distances', 'metadatas', 'documents']
         )
+        print(results)
         return jsonify({"processedData": results})
     return
 
