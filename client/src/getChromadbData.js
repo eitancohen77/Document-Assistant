@@ -39,6 +39,11 @@ export function ChromaDBData() {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink className="nav-link" to="/chroma">
+                  Chroma
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink className="nav-link" to="/chromaAll">
                   ChromaAll
                 </NavLink>

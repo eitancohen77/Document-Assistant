@@ -34,6 +34,11 @@ function DataManipulationPage() {
           <nav>
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
+                <NavLink className="nav-link" to="/">
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink className="nav-link" to="/chroma">
                   Chroma
                 </NavLink>
