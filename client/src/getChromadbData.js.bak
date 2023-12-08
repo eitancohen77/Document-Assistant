@@ -24,22 +24,17 @@ export function ChromaDBData() {
 
 
     return (
-        <>
-            <div class="jumbotron text-center">
-                <h1>AI Assistant 🤖</h1>
-            </div>
-            <div class="container p-4 my-4 border">
-                <form onSubmit={handleSubmit}>
-                    <input
-                        type="text"
-                        value={input}
-                        onChange={(e) => setInput(e.target.value)}
-                    />
-                    <button class="btn-primary btn block" type="submit">Submit</button>
-                </form>
-                <p>ChromaDB Documents: {result.documents && result.documents.join(', ')}</p>
-            </div>
-        </>
+        <div>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                />
+                <button type="submit">Submit</button>
+            </form>
+            <p>ChromaDB Documents: {result.documents && result.documents.join(', ')}</p>
+        </div>
     );
 }
 
@@ -63,13 +58,8 @@ export function ChromaDBDataDisplay() {
     }, []);
 
     return (
-        <>
-            <div class="jumbotron text-center">
-                <h1>AI Assistant 🤖</h1>
-            </div>
-            <div>
-                <p>{data.documents}</p>
-            </div>
-        </>
+        <div>
+            <p>{data.documents}</p>
+        </div>
     );
 }

@@ -24,17 +24,38 @@ function DataManipulationPage() {
 
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
-                />
-                <button type="submit">Submit</button>
-            </form>
-            <p>AI Response {result}</p>
-        </div>
+        <>
+      <div class="jumbotron text-center">
+        <h1>AI Assistant 🤖</h1>
+      </div>
+      <div class="container p-4 my-4 border">
+
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder='Enter your question'
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
+          <button class="btn-primary btn block" type="submit">Submit</button>
+        </form>
+        <p>AI Response
+          <div class="container p-4">{result} </div>
+        </p>
+      </div>
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav pb-3 mb-3">
+            <li>
+              <a class="nav-link px-2 text-body-secondary" href="/chroma">~Chroma~</a>
+            </li>
+            <li>
+              <a class="nav-link px-2 text-body-secondary" href="/chromaAll">~ChromaAll~</a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </>
     );
 }
 
