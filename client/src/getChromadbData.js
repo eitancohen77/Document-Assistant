@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { NavLink } from 'react-router-dom';
 
 export function ChromaDBData() {
 
@@ -28,6 +29,24 @@ export function ChromaDBData() {
             <div class="jumbotron text-center">
                 <h1>AI Assistant 🤖</h1>
             </div>
+            <nav className="navbar navbar-expand-sm navbar-light bg-light shadow mb-3">
+        <div className="container-fluid">
+          <nav>
+            <ul className="navbar-nav me-auto">
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/">
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/chromaAll">
+                  ChromaAll
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
             <div class="container p-4 my-4 border">
                 <form onSubmit={handleSubmit}>
                     <input
