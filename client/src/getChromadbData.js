@@ -16,8 +16,14 @@ export function ChromaDBData() {
                 },
                 body: JSON.stringify({ userInput: input }),
             });
-            const data = await response.json();
-            setResult(data.processedData);
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log("Response Data:", data);
+                setResult(data.processedData);
+            } else {
+                console.error("Error with response:", response.statusText);
+            }
         } catch (error) {
             console.error("Error:", error);
         }
@@ -30,28 +36,28 @@ export function ChromaDBData() {
                 <h1>AI Assistant 🤖</h1>
             </div>
             <nav className="navbar navbar-expand-sm navbar-light bg-light shadow mb-3">
-        <div className="container-fluid">
-          <nav>
-            <ul className="navbar-nav me-auto">
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/">
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/chroma">
-                  Chroma
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/chromaAll">
-                  ChromaAll
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </nav>
+                <div className="container-fluid">
+                    <nav>
+                        <ul className="navbar-nav me-auto">
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/">
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/chroma">
+                                    Chroma
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/chromaAll">
+                                    ChromaAll
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
             <div class="container p-4 my-4 border">
                 <form onSubmit={handleSubmit}>
                     <input
@@ -61,7 +67,7 @@ export function ChromaDBData() {
                     />
                     <button class="btn-primary btn block" type="submit">Submit</button>
                 </form>
-                <p>ChromaDB Documents: {result.documents && result.documents.join(', ')}</p>
+                <p>ChromaDB Documents: {result}</p>
             </div>
         </>
     );
